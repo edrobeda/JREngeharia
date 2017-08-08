@@ -1,0 +1,26 @@
+.bg{
+    background-image: url('./images/bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.full-screen{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.half-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+@media (orientation: landscape) {
+    body {
+        background-size: 100%;
+    }
+}
