@@ -2,7 +2,8 @@
     background-image: url('./images/bg.jpg');
     background-attachment: fixed;
     background-position: center;
-    background-size: 100% 100%;
+    /*background-size: ;*/
+
 }
 
 .full-screen{
@@ -12,6 +13,7 @@
 
 
 .half-screen {
+    width: 50vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -19,8 +21,25 @@
     transform: translate(-50%, -50%);
 }
 
-@media (orientation: landscape) {
-    body {
-        background-size: 100%;
-    }
+.bot-right{
+    width: 30vw;
+    position: fixed;
+    top: 100%;
+    left: 80%;
+    transform: translate(-30%, -80%);
+}
+
+.bot-left {
+    width: 30vw;
+    position: fixed;
+    top: 100%;
+    left: 10%;
+    transform: translate(-30%, -80%);
+}
+.top-right {
+    width: 30vw;
+    position: fixed;
+    top: 0%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 }
